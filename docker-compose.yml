@@ -1,7 +1,11 @@
 version: '2'
 services:
-  web:
-    build: .
+  frontend:
+    build: src/front/
+    depends_on:
+     - backend
+  backend:
+    build: src/
     ports:
      - "80:8080"
     volumes:
