@@ -1,15 +1,15 @@
-FROM node:argon
+FROM node:5.11.1
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /usr/src/back/
+WORKDIR /usr/src/back/
 
 # Install app dependencies
-COPY package.json /usr/src/app/
+COPY back/package.json /usr/src/back/
 RUN npm install
 
 # Bundle app source
-COPY . /usr/src/app
+COPY . /usr/src
 
 EXPOSE 8080
 CMD [ "npm", "start" ]

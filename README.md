@@ -19,4 +19,4 @@ Start Docker-Compose.
 
 `docker-compose up`
 
-Open http://localhost in your favorite browser. You should see `Hello World!`
+Open http://localhost in your favorite browser. You should see `My First Angular 2 App`
