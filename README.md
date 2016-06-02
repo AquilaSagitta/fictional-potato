@@ -9,14 +9,20 @@ Test bed for Docker/GitHub/Travis-CI deployment on a Express, AngularJs, Redis, 
 ## Getting Started
 Clone the repository.
 
-`git clone https://github.com/AquilaSagitta/fictional-potato.git`
+```Shell
+git clone https://github.com/AquilaSagitta/fictional-potato.git
+```
 
 Enter the newly created `fictional-potato` directory.
 
-`cd fictional-potato`
+```Shell
+cd fictional-potato
+```
 
 Start Docker-Compose.
 
-`docker-compose up`
+```Shell
+docker-compose up
+```
 
 Open http://localhost in your favorite browser. You should see `My First Angular 2 App`
